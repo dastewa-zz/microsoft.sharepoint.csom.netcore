@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29319.158
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.LearnerGraph.SharePoint.CSOM", "Microsoft.LearnerGraph.SharePoint.CSOM\Microsoft.LearnerGraph.SharePoint.CSOM.csproj", "{1414CBDA-6946-4EDB-856A-CFAAE838E027}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1414CBDA-6946-4EDB-856A-CFAAE838E027}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1414CBDA-6946-4EDB-856A-CFAAE838E027}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1414CBDA-6946-4EDB-856A-CFAAE838E027}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1414CBDA-6946-4EDB-856A-CFAAE838E027}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1AB43A3C-6C01-4233-9647-221EA6946710}
+	EndGlobalSection
+EndGlobal
