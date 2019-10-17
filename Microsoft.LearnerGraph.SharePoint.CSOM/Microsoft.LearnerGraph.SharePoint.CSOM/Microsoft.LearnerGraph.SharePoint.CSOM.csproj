@@ -1,8 +1,20 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>dastewa@microsoft.com</Authors>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Description>Library for creating a clientcontext that uses the password grant type for Azure AD authentication.</Description>
+    <Copyright>Microsoft 2019</Copyright>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="stylecop.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <AdditionalFiles Include="stylecop.json" />
+  </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Assemblies\SharepointCSOM\" />
@@ -10,6 +22,45 @@
 
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+    <PackageReference Include="StyleCop.Analyzers" Version="1.1.118">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="5.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Microsoft.SharePoint.Client.Portable">
+      <HintPath>Assemblies\SharepointCSOM\Microsoft.SharePoint.Client.Portable.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SharePoint.Client.Runtime.Portable">
+      <HintPath>Assemblies\SharepointCSOM\Microsoft.SharePoint.Client.Runtime.Portable.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SharePoint.Client.Runtime.Windows">
+      <HintPath>Assemblies\SharepointCSOM\Microsoft.SharePoint.Client.Runtime.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SharePoint.Client.Search.Portable">
+      <HintPath>Assemblies\SharepointCSOM\Microsoft.SharePoint.Client.Search.Portable.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Assemblies\SharepointCSOM\Microsoft.SharePoint.Client.Portable.dll">
+      <Pack>true</Pack>
+      <PackagePath>lib\netstandard2.0\Microsoft.SharePoint.Client.Portable.dll</PackagePath>
+    </Content>
+    <Content Include="Assemblies\SharepointCSOM\Microsoft.SharePoint.Client.Runtime.Portable.dll">
+      <Pack>true</Pack>
+      <PackagePath>lib\netstandard2.0\Microsoft.SharePoint.Client.Runtime.Portable.dll</PackagePath>
+    </Content>
+    <Content Include="Assemblies\SharepointCSOM\Microsoft.SharePoint.Client.Runtime.Windows.dll">
+      <Pack>true</Pack>
+      <PackagePath>lib\netstandard2.0\Microsoft.SharePoint.Client.Runtime.Windows.dll</PackagePath>
+    </Content>
+    <Content Include="Assemblies\SharepointCSOM\Microsoft.SharePoint.Client.Search.Portable.dll">
+      <Pack>true</Pack>
+      <PackagePath>lib\netstandard2.0\Microsoft.SharePoint.Client.Search.Portable.dll</PackagePath>
+    </Content>
   </ItemGroup>
 
 </Project>
